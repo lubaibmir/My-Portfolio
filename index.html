@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="output.css" rel="stylesheet">
+    <title>Portfolio</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-body bg-light-bg text-light-text transition-colors duration-300">
+    <!-- Navbar -->
+    <nav class="flex place-content-between space-x-20 fixed top-0 left-0 right-0 bg-navbar  px-10 pt-4 h-16 z-50">
+        <h1 class="font-headline font-semibold text-4xl text-shadow-lg"><span class="text-deep-teal">L</span>UBAIB</h1>
+        <div class="flex place-content-end items-center">
+            <div class="hidden sm:flex space-x-10 mr-3 text-xl ">
+                <a href="#home" class=" nav-link text-deep-teal underline" data-section="home">Home</a>
+                <a href="#skills" class="nav-link hover:text-deep-teal" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-link hover:text-deep-teal" data-section="projects">Projects</a>
+                <a href="#contact" class="nav-link hover:text-deep-teal" data-section="contact">Contact</a>
+            </div>
+            <div>
+                <button id="modeToggle" class="rounded-3xl bg-deep-teal px-2 py-1 hover:-translate-y-1 cursor-pointer">Dark</button>
+            </div>
+            <div class="flex sm:hidden ml-1  w-10 h-10 items-center justify-center">
+                <button id="hamburger" class="grid grid-cols-1 gap-y-1  ">
+                    <span id="ham1" class="h-1 w-6 bg-light-text rounded-xs transition"></span>
+                    <span id="ham2" class="h-1 w-6 bg-light-text rounded-xs transition"></span>
+                    <span id="ham3" class="h-1 w-6 bg-light-text rounded-xs transition"></span>
+                </button>
+            </div>
+            
+        </div>
+        </div>
+    </nav>
+    <div id="dropdown" class="grid grid-cols-1 text-center transition-transform h-4/12 w-full mt-16 p-2 bg-navbar fixed ham">
+                <a href="#" class=" m-auto w-8/12 rounded-3xl nav-link text-deep-teal underline" data-section="home">Home</a>
+                <a href="#" class=" m-auto w-8/12 rounded-3xl nav-link text-deep-teal underline" data-section="skills">Skills</a>
+                <a href="#" class=" m-auto w-8/12 rounded-3xl nav-link text-deep-teal underline" data-section="projects">Projects</a>
+                <a href="#" class=" m-auto w-8/12 rounded-3xl nav-link text-deep-teal underline" data-section="contact">Contact</a>
+        </div>
+    
+    <div class="pt-16 px-10">
+        <!-- Home -->
+        <section id="home" class="mt-16" >
+            <div class="flex gap-54 justify-center items-center">
+                <div class="max-w-xl">
+                    <span class="font-body font-normal text-2xl">Hello <br></span>
+                    <span class="font-headline font-bold text-5xl">I am <span class="text-deep-teal">Lubaib Mir</span> <br></span>
+                    <p class="font-body text-xl font-extralight ">I am a front end web developer. Learning backend. I build projects using html,css,tailwind,javascript. I have put some of work here, You can take a look at that. Feedback is appreciated. </p>
+                </div>
+                <div class="hidden xl:block relative w-72 h-72 rounded-full overflow-hidden 
+                            bg-gradient-to-t from-gradient-teal to-deep-teal 
+                            p-2 drop-shadow-2xl shadow-deep-teal">
+                    <img src="profile.png" 
+                        alt="Profile"
+                        class=" block w-full h-full object-cover object-center scale-125" />
+                </div>
+            </div>
+            <div class="flex gap-3 justify-center max-w-xl" >
+                <a href="#contact" class="px-6 py-3 rounded-4xl bg-deep-teal text-light-bg hover:-translate-y-1 cursor-pointer">Contact me</a>
+                <a href="#projects" class="px-6 py-3 border rounded-4xl hover:-translate-y-1 cursor-pointer">My Work</a>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section id="skills" class="mt-40 h-full">
+            <h1 class="font-headline font-bold text-4xl text-shadow-lg text-center">My Skills </h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 max-w-4xl gap-10 mx-auto ">
+                <div class="space-y-2">
+                    <h1 class="font-body text-xl">HTML</h1>
+                    <div class="bg-black rounded-full overflow-hidden h-2 ">
+                        <div class="h-full bg-deep-teal w-10/12 rounded-full"></div>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h1 class="font-body text-xl">CSS</h1>
+                    <div class="bg-black rounded-full overflow-hidden h-2 ">
+                        <div class="h-full bg-deep-teal w-9/12 rounded-full"></div>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h1 class="font-body text-xl">Tailwind</h1>
+                    <div class="bg-black rounded-full overflow-hidden h-2 ">
+                        <div class="h-full bg-deep-teal w-8/12 rounded-full"></div>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h1 class="font-body text-xl">JavaScript</h1>
+                    <div class="bg-black rounded-full overflow-hidden h-2 ">
+                        <div class="h-full bg-deep-teal w-10/12 rounded-full"></div>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h1 class="font-body text-xl">JQuery</h1>
+                    <div class="bg-black rounded-full overflow-hidden h-2 ">
+                        <div class="h-full bg-deep-teal w-10/12 rounded-full"></div>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h1 class="font-body text-xl">Node.js</h1>
+                    <div class="bg-black rounded-full overflow-hidden h-2 ">
+                        <div class="h-full bg-deep-teal w-7/12 rounded-full"></div>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h1 class="font-body text-xl">Express.js</h1>
+                    <div class="bg-black rounded-full overflow-hidden h-2 ">
+                        <div class="h-full bg-deep-teal w-7/12 rounded-full"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Projects -->
+         <section id="projects" class="mt-40 h-full">
+            <h1 class="font-headline font-bold text-4xl text-shadow-lg text-center">Recent Projects </h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 mx-auto gap-10 mt-16">
+                <div class="space-y-2 max-w-2xs">
+                    <h1 class="font-semibold text-xl underline">Mirs-Recipe Finder</h1>
+                    <p class="font-extralight">This is a simple static webpage that I have created using html and css</p>
+                    <p class="font-extralight">Direct Link: <a href="#">mirsrecipefinder</a></p>
+                </div>
+                <div class="space-y-2 max-w-2xs">
+                    <h1 class="font-semibold text-xl underline">SkillSea</h1>
+                    <p class="font-extralight">This is a frontend website that I have created with html,css and javascript. This is an imaginary learning platform.</p>
+                    <p class="font-extralight">Direct Link: <a href="#">skillsea</a></p>
+                </div>
+                <div class="space-y-2 max-w-2xs">
+                    <h1 class="font-semibold text-xl underline">Simon game</h1>
+                    <p class="font-extralight"> This is a game created using jquery.</p>
+                    <p class="font-extralight">Direct Link: <a href="#">simongame</a></p>
+                </div>
+            </div>
+         </section>
+         <!-- Contact -->
+         <section id="contact" class="mt-40 h-full">
+            <h1 class="font-headline font-bold text-4xl text-shadow-lg text-center">Contact Me</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 mx-auto max-w-3xl gap-10 justify-items-center mt-10 mb-16">
+                <div class="flex items-center gap-2 space-x-1.5">
+                    <img class="w-8 h-8 social-icon" src="github.png" alt="Github">
+                    <a href="#" class="hover:text-deep-teal">github link</a>
+                </div>
+                <div class="flex items-center gap-2 space-x-1.5">
+                    <img class="w-8 h-8 social-icon" src="linkedin.png" alt="linkedin">
+                    <a href="#" class="hover:text-deep-teal">linkedin link</a>
+                </div>
+                <div class="flex items-center gap-2 space-x-1.5">
+                    <img class="w-8 h-8 social-icon" src="mail.png" alt="Mail">
+                    <a href="#" class="hover:text-deep-teal">gmail link</a>
+                </div>
+                <div class="flex items-center gap-2 space-x-1.5">
+                    <img class="w-8 h-8 social-icon" src="instagram.png" alt="instagram">
+                    <a href="#" class="hover:text-deep-teal">instagram link</a>
+                </div>
+            </div>
+         </section>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

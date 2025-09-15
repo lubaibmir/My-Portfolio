@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@theme {
+  --font-headline: "Montserrat", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  
+  --color-navbar: #f9fafb;
+  --color-light-bg: #F5F7FA;
+  --color-light-text: #2C2C2C;
+  --color-deep-teal: #00B3B3;
+  --color-gradient-teal: #004D4D;
+
+  --default-transition-duration: 300;
+}
+
+.dark {
+  --color-navbar: #121212;
+  --color-light-bg: #1C1C1C;
+  --color-light-text: #FFFFFF;
+  --color-deep-teal: #00B3B3;
+  --color-gradient-teal: #004D4D;
+}
+.nav-link{
+  text-decoration: none;
+}
+.ham{
+  transform: translateY(-100%);
+}
+.ham1-open{
+  transform: translateY(8px) rotate(45deg) ;
+  transition: transform 0.3s ease-in-out;
+  
+}
+.ham2-open{
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.ham3-open{
+  transform: translateY(-8px) rotate(-45deg) ;
+  transition: transform 0.3s ease-in-out;
+}
